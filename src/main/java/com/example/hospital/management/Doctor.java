@@ -11,8 +11,11 @@ public class Doctor {
     private int age;
 
     private String degree;
+    public Doctor(){
 
-    public Doctor(Integer doctorId,String name, String specialization, int age, String degree) {
+    }
+
+    public Doctor(int doctorId,String name, String specialization, int age, String degree) {
         this.name = name;
         this.specialization = specialization;
         this.age = age;

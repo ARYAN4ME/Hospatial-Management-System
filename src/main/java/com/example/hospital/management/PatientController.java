@@ -110,7 +110,9 @@ public class PatientController {
     }
 
     @PutMapping("/updateDisease")
-    public String updateDisease(@RequestParam("patientId")Integer patientId,@RequestParam("disease")String disease){
+    public String updateDisease(@RequestParam("patientId")Integer patientId,
+                                @RequestParam("disease")String disease)
+    {
 
         if(patientDb.containsKey(patientId)){
 

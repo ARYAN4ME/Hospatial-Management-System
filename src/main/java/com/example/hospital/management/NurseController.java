@@ -8,11 +8,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/nurse")
 public class NurseController {
-
-
     NurseService nurseService = new NurseService();
-
-
     @PostMapping("/add")
     public String addNurse(@RequestBody Nurse nurse){
 
